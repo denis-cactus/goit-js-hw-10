@@ -1,0 +1,93 @@
+/* Загальний стиль для форми */
+.form {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: .1rem solid #ddd;
+  border-radius: .8rem;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для лейблів */
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+/* Стилі для полів введення */
+.form input[type="number"] {
+  margin-top: .8rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: .1rem solid #808080;
+  border-radius: .4rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form input[type="number"]:focus {
+  border-color: #4e75ff;
+}
+
+/* Стилі для fieldset і legend */
+.form fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  border: .1rem solid #ccc;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  max-height: 6.4rem;
+  transition: border-color .2s ease-in-out;
+}
+fieldset:hover {
+  border-color: black;
+}
+fieldset > input[type="radio"]:checked {
+  border-color: #2e2f42;
+}
+fieldset > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.form legend {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: .8rem;
+}
+
+/* Стилі для радіо кнопок */
+.form input[type="radio"] {
+  margin-right: .8rem;
+}
+
+.form label input[type="radio"]{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Стилі для кнопки */
+.form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form button[type="submit"]:hover {
+  transform: scale(1.03);
+}
+
